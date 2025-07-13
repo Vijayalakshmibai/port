@@ -1,0 +1,16 @@
+{
+  "name": "haresh-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio website for Haresh Bharadwaj R",
+  "main": "index.html",
+  "scripts": {
+    "dev": "live-server --port=3000 --host=0.0.0.0",
+    "start": "live-server --port=3000 --host=0.0.0.0"
+  },
+  "keywords": ["portfolio", "web-development", "computer-vision", "machine-learning"],
+  "author": "Haresh Bharadwaj R",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
