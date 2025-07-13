@@ -620,6 +620,29 @@ html {
         .contact-form {
             padding: 1.5rem;
         }
+
+        .timeline::before {
+            left: 30px;
+        }
+
+        .timeline-item {
+            flex-direction: column;
+            padding-left: 70px;
+        }
+
+        .timeline-item:nth-child(even) {
+            flex-direction: column;
+        }
+
+        .timeline-icon {
+            left: 30px;
+            transform: translateX(-50%);
+        }
+
+        .timeline-content {
+            grid-template-columns: 1fr;
+            gap: 1rem;
+        }
     }
 
     @media (max-width: 768px) {
@@ -659,41 +682,46 @@ html {
             padding: 1.5rem;
         }
 
+        .timeline::before {
+            left: 30px;
+        }
+
         .timeline-item {
             flex-direction: column;
-            align-items: center;
+            padding-left: 70px;
+            align-items: stretch;
         }
 
-        .prodigy-timeline-item .timeline-content {
+        .timeline-item:nth-child(even) {
             flex-direction: column;
-        }
-
-        .prodigy-timeline-item .experience-details,
-        .prodigy-timeline-item .lor-document {
-            width: 100%;
-            text-align: center;
         }
 
         .timeline-icon {
-            margin-bottom: 1rem;
+            left: 30px;
+            transform: translateX(-50%);
+            position: absolute;
+            top: 1rem;
         }
 
         .timeline-content {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 100%;
-            gap: 1rem;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+            margin-top: 0;
         }
 
         .experience-details {
             width: 100%;
-            text-align: center;
         }
 
         .lor-document {
             width: 100%;
-            text-align: center;
+            display: flex;
+            justify-content: center;
+        }
+
+        .document-card {
+            max-width: 100%;
+            width: 100%;
         }
 
         .contact-info p {
